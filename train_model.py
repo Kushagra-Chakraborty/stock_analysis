@@ -10,9 +10,9 @@ from sklearn.metrics import classification_report, confusion_matrix
 from swin_fusion_transformer_2d import SwinFusionTransformer2D
 
 # File paths
-x_data_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/X_2d_reduced_data.npy'
-fundamental_data_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/fundamental_data.npy'
-y_labels_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/y_labels_20d.npy'
+x_data_path = './Testmodel-1/X_2d_reduced_data.npy'
+fundamental_data_path = './Testmodel-1/fundamental_data.npy'
+y_labels_path = './Testmodel-1/y_labels_20d.npy'
 
 # Hyperparameters
 import torch.optim.lr_scheduler
