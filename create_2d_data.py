@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-file_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/REL_final_q.csv'
-output_file_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/X_2d_data.npy'
+file_path = './Testmodel-1/REL_final_q.csv'
+output_file_path = './Testmodel-1/X_2d_data.npy'
 window_size = 30
 
 try:
