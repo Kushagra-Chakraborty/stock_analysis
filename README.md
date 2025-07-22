@@ -4,8 +4,6 @@ This repository contains the source code for a deep learning project designed to
 Project Overview
 The primary objective of this project is to develop and validate a robust framework for stock trend prediction. By fusing a company's financial health (fundamentals) with market behavior (technicals), the model aims to provide a more holistic and accurate classification than single-modality approaches.
 
-The methodology involves advanced feature engineering, including KMeans clustering to identify market regimes, and the application of a Transformer-based deep learning model to capture complex temporal dependencies in the financial data.
-
 Tech Stack: Python, Pandas, Scikit-learn, PyTorch, Screener.in (for data scraping).
 
 Features and Data
