@@ -87,27 +87,3 @@ Data Transformation: The time-series data is converted into sequential 2D tensor
 Modeling: A Transformer-based neural network processes these 2D tensors. The architecture is designed to capture both local (day-to-day) and global (long-term) patterns within the sequence.
 
 Training and Labeling: The model is trained using a 20-day forward-looking window to generate labels. A price change exceeding a set threshold determines the "Long" or "Short" class, with the remainder classified as "Neutral".
-
-Results and Evaluation
-The model was evaluated on a hold-out test set. The results indicate strong performance in identifying actionable trading signals, with a notable weakness in classifying the "Neutral" class.
-
-Classification Report:
-
-Class	        Precision	Recall	F1-Score	Support
-Long	        0.89	    0.81	0.85	    69
-Short	        0.91	    0.76	0.83	    68
-Neutral	        0.44	    0.75	0.55	    24
-Accuracy			                0.78	    161
-Macro Avg	    0.75	    0.78	0.74	    161
-Weighted Avg	0.83	    0.78	0.80	    161
-
-Export to Sheets
-Confusion Matrix:
-
-Predicted       Long    Predicted Short	Predicted Neutral
-Actual Long	    56	    2	            11
-Actual Short	4	    52	            12
-Actual Neutral	3	    3	            18
-
-Export to Sheets
-Analysis: The model demonstrates high precision for "Long" and "Short" signals, making it a reliable tool for identifying potential trading opportunities. The low precision on the "Neutral" class suggests that its predictions for this category should be disregarded in a practical application.
