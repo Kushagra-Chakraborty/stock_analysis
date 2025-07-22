@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-file_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/REL_final_q.csv'
-output_file_path = 'C:/Users/Kushagra/Desktop/Testmodel-1/y_labels_20d.npy'
+file_path = './Testmodel-1/REL_final_q.csv'
+output_file_path = './Testmodel-1/y_labels_20d.npy'
 window_size = 20  # 20 trading days
 threshold = 0.01  # 1% price change
 
